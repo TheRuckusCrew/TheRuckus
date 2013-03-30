@@ -25,6 +25,8 @@
 		808223AF1706CBB000AC4958 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808223AE1706CBB000AC4958 /* second@2x.png */; };
 		808223C21706D1E100AC4958 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223C01706D1E100AC4958 /* ThirdViewController.m */; };
 		808223C31706D1E100AC4958 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808223C11706D1E100AC4958 /* ThirdViewController.xib */; };
+		A3DBE92D1706D26100DF7B1C /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DBE92B1706D26100DF7B1C /* FourthViewController.m */; };
+		A3DBE92E1706D26100DF7B1C /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DBE92C1706D26100DF7B1C /* FourthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,9 @@
 		808223BF1706D1E100AC4958 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		808223C01706D1E100AC4958 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		808223C11706D1E100AC4958 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		A3DBE92A1706D26100DF7B1C /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		A3DBE92B1706D26100DF7B1C /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		A3DBE92C1706D26100DF7B1C /* FourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,9 @@
 				808223C01706D1E100AC4958 /* ThirdViewController.m */,
 				808223C11706D1E100AC4958 /* ThirdViewController.xib */,
 				8082238E1706CBAF00AC4958 /* Supporting Files */,
+				A3DBE92A1706D26100DF7B1C /* FourthViewController.h */,
+				A3DBE92B1706D26100DF7B1C /* FourthViewController.m */,
+				A3DBE92C1706D26100DF7B1C /* FourthViewController.xib */,
 			);
 			path = TheRuckus;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 				808223AD1706CBB000AC4958 /* second.png in Resources */,
 				808223AF1706CBB000AC4958 /* second@2x.png in Resources */,
 				808223C31706D1E100AC4958 /* ThirdViewController.xib in Resources */,
+				A3DBE92E1706D26100DF7B1C /* FourthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +216,7 @@
 				808223A41706CBAF00AC4958 /* FirstViewController.m in Sources */,
 				808223AB1706CBB000AC4958 /* SecondViewController.m in Sources */,
 				808223C21706D1E100AC4958 /* ThirdViewController.m in Sources */,
+				A3DBE92D1706D26100DF7B1C /* FourthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
