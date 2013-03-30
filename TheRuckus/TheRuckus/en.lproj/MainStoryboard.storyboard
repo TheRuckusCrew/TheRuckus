@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="OgX-n8-58Z"/>
+                    <tabBarItem key="tabBarItem" title="Third" image="first" id="OgX-n8-58Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDx-nY-UIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
