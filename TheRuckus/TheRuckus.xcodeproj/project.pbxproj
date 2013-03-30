@@ -30,6 +30,7 @@
 		808223DA1706E4D300AC4958 /* Manifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223D91706E4D300AC4958 /* Manifest.m */; };
 		808223DD1706E4FA00AC4958 /* ManifestAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223DC1706E4F900AC4958 /* ManifestAlbum.m */; };
 		808223E01706E50600AC4958 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223DF1706E50600AC4958 /* User.m */; };
+		A35E547B1706F36500E6EAA7 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35E547A1706F36500E6EAA7 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,8 @@
 		808223DC1706E4F900AC4958 /* ManifestAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManifestAlbum.m; sourceTree = "<group>"; };
 		808223DE1706E50600AC4958 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		808223DF1706E50600AC4958 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A35E54791706F36500E6EAA7 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		A35E547A1706F36500E6EAA7 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,8 @@
 				808223AA1706CBB000AC4958 /* SecondViewController.m */,
 				808223AC1706CBB000AC4958 /* second.png */,
 				808223AE1706CBB000AC4958 /* second@2x.png */,
+				A35E54791706F36500E6EAA7 /* ThirdViewController.h */,
+				A35E547A1706F36500E6EAA7 /* ThirdViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				808223DA1706E4D300AC4958 /* Manifest.m in Sources */,
 				808223DD1706E4FA00AC4958 /* ManifestAlbum.m in Sources */,
 				808223E01706E50600AC4958 /* User.m in Sources */,
+				A35E547B1706F36500E6EAA7 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
