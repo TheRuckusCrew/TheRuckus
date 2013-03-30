@@ -117,10 +117,10 @@
 			children = (
 				808223E11706E70900AC4958 /* Controller */,
 				808223CB1706DDCB00AC4958 /* Model */,
+				8082238E1706CBAF00AC4958 /* Supporting Files */,
 				808223961706CBAF00AC4958 /* AppDelegate.h */,
 				808223971706CBAF00AC4958 /* AppDelegate.m */,
 				8082239F1706CBAF00AC4958 /* MainStoryboard.storyboard */,
-				8082238E1706CBAF00AC4958 /* Supporting Files */,
 			);
 			path = TheRuckus;
 			sourceTree = "<group>";
