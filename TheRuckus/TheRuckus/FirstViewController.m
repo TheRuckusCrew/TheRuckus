@@ -18,6 +18,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Read in the dataModel
+    model = [NSManagedObjectModel mergedModelFromBundles:nil];
+    NSLog(@"Model: %@", model);
+    
+    NSPersistentStoreCoordinator *psc = [[NSPersistentStoreCoordinator alloc]initWithManagedObjectModel:model];
+    
+    // Where did the SQL file go?
+//    NSString *path = 
+    
 }
 
 - (void)didReceiveMemoryWarning
