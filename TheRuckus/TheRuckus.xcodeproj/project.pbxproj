@@ -23,6 +23,8 @@
 		808223AB1706CBB000AC4958 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223AA1706CBB000AC4958 /* SecondViewController.m */; };
 		808223AD1706CBB000AC4958 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 808223AC1706CBB000AC4958 /* second.png */; };
 		808223AF1706CBB000AC4958 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808223AE1706CBB000AC4958 /* second@2x.png */; };
+		808223C21706D1E100AC4958 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223C01706D1E100AC4958 /* ThirdViewController.m */; };
+		808223C31706D1E100AC4958 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808223C11706D1E100AC4958 /* ThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,9 @@
 		808223AA1706CBB000AC4958 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		808223AC1706CBB000AC4958 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		808223AE1706CBB000AC4958 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		808223BF1706D1E100AC4958 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		808223C01706D1E100AC4958 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		808223C11706D1E100AC4958 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,9 @@
 				808223AA1706CBB000AC4958 /* SecondViewController.m */,
 				808223AC1706CBB000AC4958 /* second.png */,
 				808223AE1706CBB000AC4958 /* second@2x.png */,
+				808223BF1706D1E100AC4958 /* ThirdViewController.h */,
+				808223C01706D1E100AC4958 /* ThirdViewController.m */,
+				808223C11706D1E100AC4958 /* ThirdViewController.xib */,
 				8082238E1706CBAF00AC4958 /* Supporting Files */,
 			);
 			path = TheRuckus;
@@ -183,6 +191,7 @@
 				808223A81706CBB000AC4958 /* first@2x.png in Resources */,
 				808223AD1706CBB000AC4958 /* second.png in Resources */,
 				808223AF1706CBB000AC4958 /* second@2x.png in Resources */,
+				808223C31706D1E100AC4958 /* ThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +206,7 @@
 				808223981706CBAF00AC4958 /* AppDelegate.m in Sources */,
 				808223A41706CBAF00AC4958 /* FirstViewController.m in Sources */,
 				808223AB1706CBB000AC4958 /* SecondViewController.m in Sources */,
+				808223C21706D1E100AC4958 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +323,7 @@
 				808223B41706CBB000AC4958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
