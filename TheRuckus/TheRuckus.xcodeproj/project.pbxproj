@@ -23,8 +23,6 @@
 		808223AB1706CBB000AC4958 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223AA1706CBB000AC4958 /* SecondViewController.m */; };
 		808223AD1706CBB000AC4958 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 808223AC1706CBB000AC4958 /* second.png */; };
 		808223AF1706CBB000AC4958 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808223AE1706CBB000AC4958 /* second@2x.png */; };
-		808223C21706D1E100AC4958 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223C01706D1E100AC4958 /* ThirdViewController.m */; };
-		808223C31706D1E100AC4958 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808223C11706D1E100AC4958 /* ThirdViewController.xib */; };
 		808223C91706DD9C00AC4958 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808223C81706DD9C00AC4958 /* CoreData.framework */; };
 		808223CE1706DE2500AC4958 /* RuckusDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 808223CC1706DE2500AC4958 /* RuckusDataModel.xcdatamodeld */; };
 		808223D41706E49100AC4958 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223D31706E49100AC4958 /* Category.m */; };
@@ -32,8 +30,6 @@
 		808223DA1706E4D300AC4958 /* Manifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223D91706E4D300AC4958 /* Manifest.m */; };
 		808223DD1706E4FA00AC4958 /* ManifestAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223DC1706E4F900AC4958 /* ManifestAlbum.m */; };
 		808223E01706E50600AC4958 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223DF1706E50600AC4958 /* User.m */; };
-		A3DBE92D1706D26100DF7B1C /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DBE92B1706D26100DF7B1C /* FourthViewController.m */; };
-		A3DBE92E1706D26100DF7B1C /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DBE92C1706D26100DF7B1C /* FourthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,9 +55,6 @@
 		808223AA1706CBB000AC4958 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		808223AC1706CBB000AC4958 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		808223AE1706CBB000AC4958 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		808223BF1706D1E100AC4958 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		808223C01706D1E100AC4958 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		808223C11706D1E100AC4958 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 		808223C81706DD9C00AC4958 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		808223CD1706DE2500AC4958 /* RuckusDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RuckusDataModel.xcdatamodel; sourceTree = "<group>"; };
 		808223D21706E49100AC4958 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
@@ -74,9 +67,6 @@
 		808223DC1706E4F900AC4958 /* ManifestAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManifestAlbum.m; sourceTree = "<group>"; };
 		808223DE1706E50600AC4958 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		808223DF1706E50600AC4958 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		A3DBE92A1706D26100DF7B1C /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
-		A3DBE92B1706D26100DF7B1C /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
-		A3DBE92C1706D26100DF7B1C /* FourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,25 +115,12 @@
 		8082238D1706CBAF00AC4958 /* TheRuckus */ = {
 			isa = PBXGroup;
 			children = (
+				808223E11706E70900AC4958 /* Controller */,
 				808223CB1706DDCB00AC4958 /* Model */,
 				808223961706CBAF00AC4958 /* AppDelegate.h */,
 				808223971706CBAF00AC4958 /* AppDelegate.m */,
 				8082239F1706CBAF00AC4958 /* MainStoryboard.storyboard */,
-				808223A21706CBAF00AC4958 /* FirstViewController.h */,
-				808223A31706CBAF00AC4958 /* FirstViewController.m */,
-				808223A51706CBAF00AC4958 /* first.png */,
-				808223A71706CBB000AC4958 /* first@2x.png */,
-				808223A91706CBB000AC4958 /* SecondViewController.h */,
-				808223AA1706CBB000AC4958 /* SecondViewController.m */,
-				808223AC1706CBB000AC4958 /* second.png */,
-				808223AE1706CBB000AC4958 /* second@2x.png */,
-				808223BF1706D1E100AC4958 /* ThirdViewController.h */,
-				808223C01706D1E100AC4958 /* ThirdViewController.m */,
-				808223C11706D1E100AC4958 /* ThirdViewController.xib */,
 				8082238E1706CBAF00AC4958 /* Supporting Files */,
-				A3DBE92A1706D26100DF7B1C /* FourthViewController.h */,
-				A3DBE92B1706D26100DF7B1C /* FourthViewController.m */,
-				A3DBE92C1706D26100DF7B1C /* FourthViewController.xib */,
 			);
 			path = TheRuckus;
 			sourceTree = "<group>";
@@ -178,6 +155,21 @@
 				808223D31706E49100AC4958 /* Category.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		808223E11706E70900AC4958 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				808223A21706CBAF00AC4958 /* FirstViewController.h */,
+				808223A31706CBAF00AC4958 /* FirstViewController.m */,
+				808223A51706CBAF00AC4958 /* first.png */,
+				808223A71706CBB000AC4958 /* first@2x.png */,
+				808223A91706CBB000AC4958 /* SecondViewController.h */,
+				808223AA1706CBB000AC4958 /* SecondViewController.m */,
+				808223AC1706CBB000AC4958 /* second.png */,
+				808223AE1706CBB000AC4958 /* second@2x.png */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +231,6 @@
 				808223A81706CBB000AC4958 /* first@2x.png in Resources */,
 				808223AD1706CBB000AC4958 /* second.png in Resources */,
 				808223AF1706CBB000AC4958 /* second@2x.png in Resources */,
-				808223C31706D1E100AC4958 /* ThirdViewController.xib in Resources */,
-				A3DBE92E1706D26100DF7B1C /* FourthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +245,6 @@
 				808223981706CBAF00AC4958 /* AppDelegate.m in Sources */,
 				808223A41706CBAF00AC4958 /* FirstViewController.m in Sources */,
 				808223AB1706CBB000AC4958 /* SecondViewController.m in Sources */,
-				808223C21706D1E100AC4958 /* ThirdViewController.m in Sources */,
-				A3DBE92D1706D26100DF7B1C /* FourthViewController.m in Sources */,
 				808223CE1706DE2500AC4958 /* RuckusDataModel.xcdatamodeld in Sources */,
 				808223D41706E49100AC4958 /* Category.m in Sources */,
 				808223D71706E4BC00AC4958 /* CategoryType.m in Sources */,
