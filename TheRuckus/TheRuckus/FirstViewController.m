@@ -23,10 +23,10 @@
     model = [NSManagedObjectModel mergedModelFromBundles:nil];
     NSLog(@"Model: %@", model);
     
+    //Opens a SQLite database at a particular filename
     NSPersistentStoreCoordinator *psc = [[NSPersistentStoreCoordinator alloc]initWithManagedObjectModel:model];
     
-    // Where did the SQL file go?
-//    NSString *path = 
+    
     
 }
 

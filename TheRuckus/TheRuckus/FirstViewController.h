@@ -18,8 +18,10 @@
     NSMutableArray *allCategories;
     NSMutableArray *allCategoryTypes;
     
-    // Database modifiers
+    // dataModel
     NSManagedObjectContext *context;
+    
+    // Opens SQLite database
     NSManagedObjectModel *model;
 }
 
