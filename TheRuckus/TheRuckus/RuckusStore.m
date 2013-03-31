@@ -10,12 +10,19 @@
 
 @implementation RuckusStore
 
++(RuckusStore *)defaultStore
+{
+    static RuckusStore *sharedStore = nil;
+    if (!sharedStore) {
+        // Create the singleton
+        sharedStore = [[super allocWithZone:NULL] init];
+    }
+    return sharedStore;
+}
+
 -(id) init
 {
-//    if (defaultStore)
-//    {
-//        return defaultStore;
-//    }
+    
     self = [super init];
     
     model = [NSManagedObjectModel mergedModelFromBundles:nil];
