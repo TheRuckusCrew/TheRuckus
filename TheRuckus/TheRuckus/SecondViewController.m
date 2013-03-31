@@ -71,8 +71,11 @@
 -(Category *) createCategory
 {
     Category *c = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:context];
+    
     [c setName:@"TestCategory1"];
     [allCategories addObject:c];
+    [self savChanges];
+    
     return c;
 }
 

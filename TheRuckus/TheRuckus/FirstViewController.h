@@ -18,5 +18,5 @@
 
 - (NSArray *) allUsers;
 - (BOOL) saveChanges;
-- (void) fetchUsers;
+- (void) fetchCategories;
 @end
