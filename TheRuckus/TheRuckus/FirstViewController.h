@@ -11,18 +11,12 @@
 
 @interface FirstViewController : UIViewController
 {
-    // Model objects
-    NSMutableArray *allUsers;
-    NSMutableArray *allManifestAlbums;
-    NSMutableArray *allManifests;
-    NSMutableArray *allCategories;
-    NSMutableArray *allCategoryTypes;
-    
-    // dataModel
+    NSMutableArray *userArray;
     NSManagedObjectContext *context;
-    
-    // Opens SQLite database
     NSManagedObjectModel *model;
 }
 
+- (NSArray *) allUsers;
+- (BOOL) saveChanges;
+- (void) fetchUsers;
 @end
