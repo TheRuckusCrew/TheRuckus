@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-#import "User.h"
+#import "Category.h"
 @interface FirstViewController ()
 
 @end
@@ -22,7 +22,7 @@
     
     // Read in RuckusDataMode.xcdatamodeld
     model = [NSManagedObjectModel mergedModelFromBundles:nil];
-    NSLog(@"model = %@", model);
+//    NSLog(@"model = %@", model);
     
     // Used to open a SQLite database at a particular file name
     NSPersistentStoreCoordinator *psc =
@@ -32,7 +32,7 @@
     NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString* basePath = [paths objectAtIndex:0];
     NSURL* storeUrl = [NSURL fileURLWithPath:[basePath stringByAppendingPathComponent: @"RuckusDatabase.sqlite"]];
-    NSLog(@"storeUrl = %@", [storeUrl description]);
+//    NSLog(@"storeUrl = %@", [storeUrl description]);
 
     NSError *error = nil;
     
@@ -52,16 +52,38 @@
     
     // The managed object context can manage undo, but we don't need it
     [context setUndoManager:nil];
+    
+     NSLog(@"First Fetch");
+    [self fetchCategories];
+    [self createCategory];
+     NSLog(@"Third Fetch");
+    [self fetchCategories];
 }
 
--(void) fetchUsers
+-(Category *) createCategory
 {
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *e = [[model entitiesByName] objectForKey:@"Name"];
+    Category *c = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:context];
+    
+    [c setName:@"TestCategory1"];
+
+    [self saveChanges];
+    
+    NSLog(@"Created: %@", [c description]);
+    return c;
+}
+-(void) fetchCategories
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc]init];
+    [request setReturnsObjectsAsFaults:NO];
+    NSEntityDescription *e = [[model entitiesByName] objectForKey:@"Category"];
     [request setEntity:e];
     
     NSError *error;
-    NSArray *result = [context  executeFetchRequest:request error:&error];
+    NSArray *result = [context executeFetchRequest:request error:&error];
+    if (!result){
+        [NSException raise:@"Fetch Failed" format:@"Reason : %@", [error localizedDescription]];
+    }
+    NSLog(@"Fetched: %@", [result description]);
 }
 
 - (BOOL)saveChanges
