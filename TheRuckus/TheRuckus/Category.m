@@ -14,4 +14,9 @@
 @dynamic name;
 @dynamic categoryTypes;
 
+
+- (void)addCategoryTypesObject:(NSManagedObject *)value
+{
+    
+}
 @end

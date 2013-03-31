@@ -23,9 +23,9 @@
     </entity>
     <elements>
         <element name="Category" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="CategoryType" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="Manifest" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="ManifestAlbum" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="User" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="CategoryType" positionX="-117" positionY="63" width="128" height="75"/>
+        <element name="Manifest" positionX="403" positionY="90" width="128" height="75"/>
+        <element name="ManifestAlbum" positionX="-110" positionY="393" width="128" height="75"/>
+        <element name="User" positionX="675" positionY="351" width="128" height="90"/>
     </elements>
 </model>
