@@ -31,6 +31,7 @@
 		808223DD1706E4FA00AC4958 /* ManifestAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223DC1706E4F900AC4958 /* ManifestAlbum.m */; };
 		808223E01706E50600AC4958 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223DF1706E50600AC4958 /* User.m */; };
 		A315ABF41707C95F00B92A55 /* RuckusStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A315ABF31707C95F00B92A55 /* RuckusStore.m */; };
+		A315ABFA1707F8B400B92A55 /* CategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A315ABF91707F8B400B92A55 /* CategoryStore.m */; };
 		A35E547B1706F36500E6EAA7 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35E547A1706F36500E6EAA7 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		808223DF1706E50600AC4958 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A315ABF21707C95F00B92A55 /* RuckusStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuckusStore.h; sourceTree = "<group>"; };
 		A315ABF31707C95F00B92A55 /* RuckusStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuckusStore.m; sourceTree = "<group>"; };
+		A315ABF81707F8B400B92A55 /* CategoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryStore.h; sourceTree = "<group>"; };
+		A315ABF91707F8B400B92A55 /* CategoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryStore.m; sourceTree = "<group>"; };
 		A35E54791706F36500E6EAA7 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		A35E547A1706F36500E6EAA7 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,19 +151,9 @@
 		808223CB1706DDCB00AC4958 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A315ABF71707F88100B92A55 /* Entities */,
+				A315ABF61707F86200B92A55 /* Stores */,
 				808223CC1706DE2500AC4958 /* RuckusDataModel.xcdatamodeld */,
-				808223DE1706E50600AC4958 /* User.h */,
-				808223DF1706E50600AC4958 /* User.m */,
-				808223DB1706E4F900AC4958 /* ManifestAlbum.h */,
-				808223DC1706E4F900AC4958 /* ManifestAlbum.m */,
-				808223D81706E4D300AC4958 /* Manifest.h */,
-				808223D91706E4D300AC4958 /* Manifest.m */,
-				808223D51706E4BC00AC4958 /* CategoryType.h */,
-				808223D61706E4BC00AC4958 /* CategoryType.m */,
-				808223D21706E49100AC4958 /* Category.h */,
-				808223D31706E49100AC4958 /* Category.m */,
-				A315ABF21707C95F00B92A55 /* RuckusStore.h */,
-				A315ABF31707C95F00B92A55 /* RuckusStore.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -180,6 +173,34 @@
 				A35E547A1706F36500E6EAA7 /* ThirdViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		A315ABF61707F86200B92A55 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				A315ABF21707C95F00B92A55 /* RuckusStore.h */,
+				A315ABF31707C95F00B92A55 /* RuckusStore.m */,
+				A315ABF81707F8B400B92A55 /* CategoryStore.h */,
+				A315ABF91707F8B400B92A55 /* CategoryStore.m */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		A315ABF71707F88100B92A55 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				808223DE1706E50600AC4958 /* User.h */,
+				808223DF1706E50600AC4958 /* User.m */,
+				808223DB1706E4F900AC4958 /* ManifestAlbum.h */,
+				808223DC1706E4F900AC4958 /* ManifestAlbum.m */,
+				808223D81706E4D300AC4958 /* Manifest.h */,
+				808223D91706E4D300AC4958 /* Manifest.m */,
+				808223D51706E4BC00AC4958 /* CategoryType.h */,
+				808223D61706E4BC00AC4958 /* CategoryType.m */,
+				808223D21706E49100AC4958 /* Category.h */,
+				808223D31706E49100AC4958 /* Category.m */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +284,7 @@
 				808223E01706E50600AC4958 /* User.m in Sources */,
 				A35E547B1706F36500E6EAA7 /* ThirdViewController.m in Sources */,
 				A315ABF41707C95F00B92A55 /* RuckusStore.m in Sources */,
+				A315ABFA1707F8B400B92A55 /* CategoryStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

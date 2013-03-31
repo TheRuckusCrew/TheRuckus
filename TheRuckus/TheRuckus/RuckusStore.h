@@ -19,4 +19,7 @@
     NSMutableArray *allCategories;
     
 }
++(RuckusStore *)defaultStore;
+-(id) init;
+-(BOOL) saveChanges;
 @end
