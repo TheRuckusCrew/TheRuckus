@@ -11,9 +11,9 @@
 
 @interface CategoryStore : NSObject
 {
-    
+    NSMutableArray *allCategories;
 }
 -(void) fetchCategories;
--(Category *) createCategory;
--(void) removeCategory: (Category *)c
+-(Category *) createCategory : (NSString *)categoryName;
+-(void) removeCategory: (Category *)c;
 @end

@@ -12,10 +12,10 @@
 
 -(id) init
 {
-    if (defaultStore)
-    {
-        return defaultStore;
-    }
+//    if (defaultStore)
+//    {
+//        return defaultStore;
+//    }
     self = [super init];
     
     model = [NSManagedObjectModel mergedModelFromBundles:nil];

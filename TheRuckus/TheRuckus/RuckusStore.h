@@ -16,8 +16,6 @@
 {
     NSManagedObjectContext *context;
     NSManagedObjectModel *model;
-    NSMutableArray *allCategories;
-    
 }
 +(RuckusStore *)defaultStore;
 -(id) init;
