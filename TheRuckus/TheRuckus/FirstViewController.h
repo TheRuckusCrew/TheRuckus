@@ -11,12 +11,7 @@
 
 @interface FirstViewController : UIViewController
 {
-    NSMutableArray *userArray;
-    NSManagedObjectContext *context;
-    NSManagedObjectModel *model;
+
 }
 
-- (NSArray *) allUsers;
-- (BOOL) saveChanges;
-- (void) fetchCategories;
 @end
