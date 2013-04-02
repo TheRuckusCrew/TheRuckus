@@ -17,6 +17,7 @@ static RuckusStore *defaultStore = nil;
 {
     if (defaultStore) {
         defaultStore = [[super allocWithZone:NULL] init];
+        [defaultStore initDatabase];
     }
     return defaultStore;
 }
@@ -37,6 +38,46 @@ static RuckusStore *defaultStore = nil;
     self = [super init];
     return self;
 }
+
+- (NSManagedObjectContext *) getContext
+{
+    return context;
+}
+
+- (NSManagedObjectModel *) getModel
+{
+    return model;
+}
+
+- (void)initDatabase
+{
+    model = [NSManagedObjectModel mergedModelFromBundles:nil];
+    //    NSLog(@"model = %@", model);
+    
+    NSPersistentStoreCoordinator *psc =
+    [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
+    
+    NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString* basePath = [paths objectAtIndex:0];
+    NSURL* storeUrl = [NSURL fileURLWithPath:[basePath stringByAppendingPathComponent: @"RuckusDatabase.sqlite"]];
+    //    NSLog(@"storeUrl = %@", [storeUrl description]);
+    
+    NSError *error = nil;
+
+    if (![psc addPersistentStoreWithType:NSSQLiteStoreType
+                           configuration:nil
+                                     URL:storeUrl
+                                 options:nil
+                                   error:&error]) {
+        [NSException raise:@"Open failed"
+                    format:@"Reason: %@", [error localizedDescription]];
+    }
+    
+    context = [[NSManagedObjectContext alloc] init];
+    [context setPersistentStoreCoordinator:psc];
+    [context setUndoManager:nil];
+}
+
 
 
 

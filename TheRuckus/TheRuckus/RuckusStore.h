@@ -21,5 +21,6 @@
 +(id)allocWithZone:(NSZone *)zone;
 
 -(id)init;
+-(void)initDatabase;
 
 @end
