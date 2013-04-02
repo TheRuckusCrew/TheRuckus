@@ -22,5 +22,5 @@
 
 -(id)init;
 -(void)initDatabase;
-
+-(BOOL)saveChanges;
 @end

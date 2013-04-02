@@ -2,18 +2,12 @@
 //  CategoryStore.h
 //  TheRuckus
 //
-//  Created by Gagandeep Dulay on 2013-03-30.
+//  Created by Warren Smith on 2013-04-01.
 //
 //
 
-#import <Foundation/Foundation.h>
-#import "RuckusStore.h"
+#import <UIKit/UIKit.h>
 
-@interface CategoryStore : NSObject
-{
-    NSMutableArray *allCategories;
-}
--(void) fetchCategories;
--(Category *) createCategory : (NSString *)categoryName;
--(void) removeCategory: (Category *)c;
+@interface CategoryStore : UIViewController
+
 @end

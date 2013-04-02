@@ -11,6 +11,7 @@
 		802E9BB8170A852900143902 /* ManifestStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 802E9BB7170A852900143902 /* ManifestStore.m */; };
 		802E9BBB170A853900143902 /* ManifestAlbumStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 802E9BBA170A853900143902 /* ManifestAlbumStore.m */; };
 		802E9BBE170A85C900143902 /* UserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 802E9BBD170A85C900143902 /* UserStore.m */; };
+		802E9BD5170A912900143902 /* CategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 802E9BD4170A912900143902 /* CategoryStore.m */; };
 		808223881706CBAF00AC4958 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808223871706CBAF00AC4958 /* UIKit.framework */; };
 		8082238A1706CBAF00AC4958 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808223891706CBAF00AC4958 /* Foundation.framework */; };
 		8082238C1706CBAF00AC4958 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8082238B1706CBAF00AC4958 /* CoreGraphics.framework */; };
@@ -35,7 +36,6 @@
 		808223DD1706E4FA00AC4958 /* ManifestAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223DC1706E4F900AC4958 /* ManifestAlbum.m */; };
 		808223E01706E50600AC4958 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 808223DF1706E50600AC4958 /* User.m */; };
 		A315ABF41707C95F00B92A55 /* RuckusStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A315ABF31707C95F00B92A55 /* RuckusStore.m */; };
-		A315ABFA1707F8B400B92A55 /* CategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A315ABF91707F8B400B92A55 /* CategoryStore.m */; };
 		A35E547B1706F36500E6EAA7 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35E547A1706F36500E6EAA7 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +48,8 @@
 		802E9BBA170A853900143902 /* ManifestAlbumStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManifestAlbumStore.m; sourceTree = "<group>"; };
 		802E9BBC170A85C900143902 /* UserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStore.h; sourceTree = "<group>"; };
 		802E9BBD170A85C900143902 /* UserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStore.m; sourceTree = "<group>"; };
+		802E9BD3170A912900143902 /* CategoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryStore.h; sourceTree = "<group>"; };
+		802E9BD4170A912900143902 /* CategoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryStore.m; sourceTree = "<group>"; };
 		808223831706CBAF00AC4958 /* TheRuckus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheRuckus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808223871706CBAF00AC4958 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		808223891706CBAF00AC4958 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,8 +86,6 @@
 		808223DF1706E50600AC4958 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A315ABF21707C95F00B92A55 /* RuckusStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuckusStore.h; sourceTree = "<group>"; };
 		A315ABF31707C95F00B92A55 /* RuckusStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuckusStore.m; sourceTree = "<group>"; };
-		A315ABF81707F8B400B92A55 /* CategoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryStore.h; sourceTree = "<group>"; };
-		A315ABF91707F8B400B92A55 /* CategoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryStore.m; sourceTree = "<group>"; };
 		A35E54791706F36500E6EAA7 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		A35E547A1706F36500E6EAA7 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,12 +196,12 @@
 				802E9BB7170A852900143902 /* ManifestStore.m */,
 				802E9BB9170A853900143902 /* ManifestAlbumStore.h */,
 				802E9BBA170A853900143902 /* ManifestAlbumStore.m */,
-				A315ABF81707F8B400B92A55 /* CategoryStore.h */,
-				A315ABF91707F8B400B92A55 /* CategoryStore.m */,
 				802E9BB2170A84EF00143902 /* CategoryTypeStore.h */,
 				802E9BB3170A84EF00143902 /* CategoryTypeStore.m */,
 				802E9BBC170A85C900143902 /* UserStore.h */,
 				802E9BBD170A85C900143902 /* UserStore.m */,
+				802E9BD3170A912900143902 /* CategoryStore.h */,
+				802E9BD4170A912900143902 /* CategoryStore.m */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -304,11 +304,11 @@
 				808223E01706E50600AC4958 /* User.m in Sources */,
 				A35E547B1706F36500E6EAA7 /* ThirdViewController.m in Sources */,
 				A315ABF41707C95F00B92A55 /* RuckusStore.m in Sources */,
-				A315ABFA1707F8B400B92A55 /* CategoryStore.m in Sources */,
 				802E9BB4170A84EF00143902 /* CategoryTypeStore.m in Sources */,
 				802E9BB8170A852900143902 /* ManifestStore.m in Sources */,
 				802E9BBB170A853900143902 /* ManifestAlbumStore.m in Sources */,
 				802E9BBE170A85C900143902 /* UserStore.m in Sources */,
+				802E9BD5170A912900143902 /* CategoryStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,40 +2,37 @@
 //  CategoryStore.m
 //  TheRuckus
 //
-//  Created by Gagandeep Dulay on 2013-03-30.
+//  Created by Warren Smith on 2013-04-01.
 //
 //
 
 #import "CategoryStore.h"
 
-@implementation CategoryStore 
-//
-//-(void) fetchCategories
-//{
-//    NSFetchRequest *request = [[NSFetchRequest alloc]init];
-//    NSEntityDescription *e = [[model entitiesByName] objectForKey:@"Category"];
-//    [request setEntity:e];
-//    NSError *error;
-//    NSArray *result = [context executeFetchRequest:request error:&error];
-//    if (!result){
-//        [NSException raise:@"Fetch Failed" format:@"Reason : %@", [error localizedDescription]];
-//    }
-//    allCategories = [[NSMutableArray alloc] initWithArray:result];
-//
-//}
-//
-//-(Category *) createCategory : (NSString *)categoryName
-//{
-//    Category *c = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:context];
-//    [c setName:categoryName];
-//    [allCategories addObject:c];
-//    return c;
-//}
-//
-//-(void) removeCategory: (Category *)c
-//{
-//    [context deleteObject:c];
-//    [allCategories removeObjectIdenticalTo:c];
-//}
-//
+@interface CategoryStore ()
+
+@end
+
+@implementation CategoryStore
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 @end

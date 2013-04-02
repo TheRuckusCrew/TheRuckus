@@ -4,8 +4,8 @@
 //
 //  Created by Gagandeep Dulay on 2013-03-30.
 //
-//  A singleton class that handles database initalization. Provides access
-//  to database model and context.
+//  A singleton class that manages database. Provides access to database
+//  model and context so other store can create objects.
 
 #import "RuckusStore.h"
 
@@ -78,4 +78,15 @@ static RuckusStore *defaultStore = nil;
     [context setPersistentStoreCoordinator:psc];
     [context setUndoManager:nil];
 }
+
+- (BOOL)saveChanges
+{
+    NSError *err = nil;
+    BOOL successful = [context save:&err];
+    if (!successful) {
+        NSLog(@"Error saving: %@", [err localizedDescription]);
+    }
+    return successful;
+}
+
 @end
