@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802E9BB4170A84EF00143902 /* CategoryTypeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 802E9BB3170A84EF00143902 /* CategoryTypeStore.m */; };
+		802E9BB8170A852900143902 /* ManifestStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 802E9BB7170A852900143902 /* ManifestStore.m */; };
+		802E9BBB170A853900143902 /* ManifestAlbumStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 802E9BBA170A853900143902 /* ManifestAlbumStore.m */; };
+		802E9BBE170A85C900143902 /* UserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 802E9BBD170A85C900143902 /* UserStore.m */; };
 		808223881706CBAF00AC4958 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808223871706CBAF00AC4958 /* UIKit.framework */; };
 		8082238A1706CBAF00AC4958 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808223891706CBAF00AC4958 /* Foundation.framework */; };
 		8082238C1706CBAF00AC4958 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8082238B1706CBAF00AC4958 /* CoreGraphics.framework */; };
@@ -36,6 +40,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		802E9BB2170A84EF00143902 /* CategoryTypeStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTypeStore.h; sourceTree = "<group>"; };
+		802E9BB3170A84EF00143902 /* CategoryTypeStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTypeStore.m; sourceTree = "<group>"; };
+		802E9BB6170A852900143902 /* ManifestStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManifestStore.h; sourceTree = "<group>"; };
+		802E9BB7170A852900143902 /* ManifestStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManifestStore.m; sourceTree = "<group>"; };
+		802E9BB9170A853900143902 /* ManifestAlbumStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManifestAlbumStore.h; sourceTree = "<group>"; };
+		802E9BBA170A853900143902 /* ManifestAlbumStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManifestAlbumStore.m; sourceTree = "<group>"; };
+		802E9BBC170A85C900143902 /* UserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStore.h; sourceTree = "<group>"; };
+		802E9BBD170A85C900143902 /* UserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStore.m; sourceTree = "<group>"; };
 		808223831706CBAF00AC4958 /* TheRuckus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheRuckus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808223871706CBAF00AC4958 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		808223891706CBAF00AC4958 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,8 +192,16 @@
 			children = (
 				A315ABF21707C95F00B92A55 /* RuckusStore.h */,
 				A315ABF31707C95F00B92A55 /* RuckusStore.m */,
+				802E9BB6170A852900143902 /* ManifestStore.h */,
+				802E9BB7170A852900143902 /* ManifestStore.m */,
+				802E9BB9170A853900143902 /* ManifestAlbumStore.h */,
+				802E9BBA170A853900143902 /* ManifestAlbumStore.m */,
 				A315ABF81707F8B400B92A55 /* CategoryStore.h */,
 				A315ABF91707F8B400B92A55 /* CategoryStore.m */,
+				802E9BB2170A84EF00143902 /* CategoryTypeStore.h */,
+				802E9BB3170A84EF00143902 /* CategoryTypeStore.m */,
+				802E9BBC170A85C900143902 /* UserStore.h */,
+				802E9BBD170A85C900143902 /* UserStore.m */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -285,6 +305,10 @@
 				A35E547B1706F36500E6EAA7 /* ThirdViewController.m in Sources */,
 				A315ABF41707C95F00B92A55 /* RuckusStore.m in Sources */,
 				A315ABFA1707F8B400B92A55 /* CategoryStore.m in Sources */,
+				802E9BB4170A84EF00143902 /* CategoryTypeStore.m in Sources */,
+				802E9BB8170A852900143902 /* ManifestStore.m in Sources */,
+				802E9BBB170A853900143902 /* ManifestAlbumStore.m in Sources */,
+				802E9BBE170A85C900143902 /* UserStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
