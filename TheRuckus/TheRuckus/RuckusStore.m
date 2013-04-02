@@ -4,7 +4,8 @@
 //
 //  Created by Gagandeep Dulay on 2013-03-30.
 //
-//
+//  A singleton class that handles database initalization. Provides access
+//  to database model and context.
 
 #import "RuckusStore.h"
 
@@ -77,9 +78,4 @@ static RuckusStore *defaultStore = nil;
     [context setPersistentStoreCoordinator:psc];
     [context setUndoManager:nil];
 }
-
-
-
-
-
 @end
