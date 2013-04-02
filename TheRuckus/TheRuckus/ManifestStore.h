@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RuckusStore.h"
 
-@interface ManifestStore : UIViewController
+@interface ManifestStore : NSObject
+{
+    NSManagedObjectContext *context;
+    NSManagedObjectModel *model;
+}
+
++(ManifestStore *)defaultStore;
++(id)allocWithZone:(NSZone *)zone;
+
 
 @end

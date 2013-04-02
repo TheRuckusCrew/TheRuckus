@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Category;
-
 @interface RuckusStore : NSObject
 {
     NSManagedObjectContext *context;

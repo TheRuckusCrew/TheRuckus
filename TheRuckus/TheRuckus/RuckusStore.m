@@ -29,7 +29,7 @@ static RuckusStore *defaultStore = nil;
     return [self defaultStore];
 }
 
-// Protect's singleton status
+// Protect singleton status
 - (id)init
 {
     if (defaultStore) {

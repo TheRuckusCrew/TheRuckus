@@ -4,35 +4,39 @@
 //
 //  Created by Warren Smith on 2013-04-01.
 //
-//
+//  Responsible for creating Manifest objects and passing them back to ViewControllers.
+//  Provides creation and fetch methods.
 
 #import "ManifestStore.h"
 
-@interface ManifestStore ()
-
-@end
-
 @implementation ManifestStore
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+static ManifestStore *defaultStore = nil;
+
+// Creates a singleton instance of ManifestStore
++ (ManifestStore *)defaultStore
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (defaultStore) {
+        defaultStore = [[super allocWithZone:NULL] init];
     }
+    return defaultStore;
+}
+
+// Prevent creation of additional instances
++ (id)allocWithZone:(NSZone *)zone
+{
+    return [self defaultStore];
+}
+
+// Protect singleton status
+- (id)init
+{
+    if (defaultStore) {
+        return defaultStore;
+    }
+    
+    self = [super init];
     return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
