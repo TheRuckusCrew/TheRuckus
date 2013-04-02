@@ -18,7 +18,21 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-   
+    
+    // Initalize database
+    [[RuckusStore defaultStore] initDatabase];
+    
+    // Create Manifest Object
+    Manifest *createStore = [[ManifestStore defaultStore] createManifest];
+    [createStore setCaption:@"Here's the caption"];
+    
+    // Save to database
+    [[ManifestStore defaultStore] saveChanges];
+    
+    // Fetch object
+    NSArray *fetchStores = [[ManifestStore defaultStore] fetchAllManifests];
+    NSLog(@"Here's the fetched objects: %@", [fetchStores description]);
+    
 }
 
 

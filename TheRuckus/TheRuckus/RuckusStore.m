@@ -53,7 +53,7 @@ static RuckusStore *defaultStore = nil;
 - (void)initDatabase
 {
     model = [NSManagedObjectModel mergedModelFromBundles:nil];
-    //    NSLog(@"model = %@", model);
+    NSLog(@"model = %@", model);
     
     NSPersistentStoreCoordinator *psc =
     [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
@@ -61,7 +61,7 @@ static RuckusStore *defaultStore = nil;
     NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString* basePath = [paths objectAtIndex:0];
     NSURL* storeUrl = [NSURL fileURLWithPath:[basePath stringByAppendingPathComponent: @"RuckusDatabase.sqlite"]];
-    //    NSLog(@"storeUrl = %@", [storeUrl description]);
+    NSLog(@"storeUrl = %@", [storeUrl description]);
     
     NSError *error = nil;
 

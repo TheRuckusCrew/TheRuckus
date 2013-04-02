@@ -67,5 +67,9 @@ static ManifestStore *defaultStore = nil;
     return [[NSMutableArray alloc] initWithArray:result];
 }
 
+-(BOOL)saveChanges
+{
+    return [[RuckusStore defaultStore] saveChanges];
+}
 
 @end

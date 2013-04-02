@@ -21,5 +21,6 @@
 
 -(Manifest *)createManifest;
 -(NSArray *)fetchAllManifests;
+-(BOOL)saveChanges;
 
 @end
