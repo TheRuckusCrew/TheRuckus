@@ -36,7 +36,36 @@ static ManifestStore *defaultStore = nil;
     }
     
     self = [super init];
+    
+    model = [[RuckusStore defaultStore] getModel];
+    context = [[RuckusStore defaultStore] getContext];
+    
     return self;
 }
+
+-(Manifest *)createManifest
+{
+    Manifest *m = [NSEntityDescription insertNewObjectForEntityForName:@"Manifest"
+                                                  inManagedObjectContext:context];
+    return m;
+}
+
+-(NSArray *)fetchAllManifests
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *e = [[model entitiesByName] objectForKey:@"Manifest"];
+    [request setEntity:e];
+    
+    NSError *error;
+    NSArray *result = [context executeFetchRequest:request error:&error];
+    if (!result) {
+        [NSException raise:@"Fetch failed"
+                    format:@"Reason: %@", [error localizedDescription]];
+    }
+    
+    return [[NSMutableArray alloc] initWithArray:result];
+}
+
 
 @end

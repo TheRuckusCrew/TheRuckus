@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RuckusStore.h"
+#import "Manifest.h"
 
 @interface ManifestStore : NSObject
 {
@@ -18,5 +19,7 @@
 +(ManifestStore *)defaultStore;
 +(id)allocWithZone:(NSZone *)zone;
 
+-(Manifest *)createManifest;
+-(NSArray *)fetchAllManifests;
 
 @end

@@ -40,12 +40,12 @@ static RuckusStore *defaultStore = nil;
     return self;
 }
 
-- (NSManagedObjectContext *) getContext
+- (NSManagedObjectContext *)getContext
 {
     return context;
 }
 
-- (NSManagedObjectModel *) getModel
+- (NSManagedObjectModel *)getModel
 {
     return model;
 }

@@ -21,4 +21,7 @@
 -(id)init;
 -(void)initDatabase;
 -(BOOL)saveChanges;
+-(NSManagedObjectContext *)getContext;
+-(NSManagedObjectModel *)getModel;
+
 @end
