@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "Category.h"
 
 @class Category;
 
@@ -17,7 +16,10 @@
     NSManagedObjectContext *context;
     NSManagedObjectModel *model;
 }
+
 +(RuckusStore *)defaultStore;
--(id) init;
--(BOOL) saveChanges;
++(id)allocWithZone:(NSZone *)zone;
+
+-(id)init;
+
 @end
