@@ -16,7 +16,7 @@ static ManifestStore *defaultStore = nil;
 // Creates a singleton instance of ManifestStore
 + (ManifestStore *)defaultStore
 {
-    if (defaultStore) {
+    if (!defaultStore) {
         defaultStore = [[super allocWithZone:NULL] init];
     }
     return defaultStore;
