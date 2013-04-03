@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RuckusStore.h"
+#import "ManifestAlbum.h"
 
-@interface ManifestAlbumStore : UIViewController
+@interface ManifestAlbumStore : NSObject
+{
+    NSManagedObjectContext *context;
+    NSManagedObjectModel *model;
+}
+
++(ManifestAlbumStore *)defaultStore;
++(id)allocWithZone:(NSZone *)zone;
+
+-(ManifestAlbumStore *)createManifestAlbum;
+-(NSArray *)fetchAllManifestAlbums;
+-(BOOL)saveChanges;
 
 @end

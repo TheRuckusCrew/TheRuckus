@@ -7,7 +7,6 @@
 //
 
 #import "ManifestAlbum.h"
-#import "Manifest.h"
 
 
 @implementation ManifestAlbum

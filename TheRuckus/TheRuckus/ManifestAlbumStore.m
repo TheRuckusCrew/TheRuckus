@@ -4,35 +4,73 @@
 //
 //  Created by Warren Smith on 2013-04-01.
 //
-//
+//  Responsible for creating Manifest objects and passing them back to ViewControllers.
+//  Provides creation and fetch methods.
+
 
 #import "ManifestAlbumStore.h"
 
-@interface ManifestAlbumStore ()
-
-@end
-
 @implementation ManifestAlbumStore
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+static ManifestAlbumStore *defaultStore = nil;
+
+// Creates a singleton instance of ManifestStore
++(ManifestAlbumStore *)defaultStore
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (!defaultStore) {
+        defaultStore = [[super allocWithZone:NULL] init];
     }
+    return defaultStore;
+}
+
+// Prevent creation of additional instances
++ (id)allocWithZone:(NSZone *)zone
+{
+    return [self defaultStore];
+}
+
+// Protect singleton status
+- (id)init
+{
+    if (defaultStore) {
+        return defaultStore;
+    }
+    
+    self = [super init];
+    
+    model = [[RuckusStore defaultStore] getModel];
+    context = [[RuckusStore defaultStore] getContext];
+    
     return self;
 }
 
-- (void)viewDidLoad
+-(ManifestAlbum *)createManifestAlbum
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    ManifestAlbum *ma = [NSEntityDescription insertNewObjectForEntityForName:@"ManifestAlbum"
+                                                      inManagedObjectContext:context];
+    return ma;
 }
 
-- (void)didReceiveMemoryWarning
+-(NSArray *)fetchAllManifestAlbums
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *e = [[model entitiesByName] objectForKey:@"ManifestAlbum"];
+    [request setEntity:e];
+    
+    NSError *error;
+    NSArray *result = [context executeFetchRequest:request error:&error];
+    if (!result) {
+        [NSException raise:@"Fetch failed"
+                    format:@"Reason: %@", [error localizedDescription]];
+    }
+    
+    return [[NSMutableArray alloc] initWithArray:result];
+}
+
+-(BOOL)saveChanges
+{
+    return [[RuckusStore defaultStore] saveChanges];
 }
 
 @end
