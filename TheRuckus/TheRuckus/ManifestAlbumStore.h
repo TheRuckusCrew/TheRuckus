@@ -19,7 +19,7 @@
 +(ManifestAlbumStore *)defaultStore;
 +(id)allocWithZone:(NSZone *)zone;
 
--(ManifestAlbumStore *)createManifestAlbum;
+-(ManifestAlbum *)createManifestAlbum;
 -(NSArray *)fetchAllManifestAlbums;
 -(BOOL)saveChanges;
 

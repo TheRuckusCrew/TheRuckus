@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RuckusStore.h"
+#import "CategoryType.h"
 
-@interface CategoryTypeStore : UIViewController
+@interface CategoryTypeStore : NSObject
+{
+    NSManagedObjectContext *context;
+    NSManagedObjectModel *model;
+}
+
++(CategoryTypeStore *)defaultStore;
++(id)allocWithZone:(NSZone *)zone;
+
+-(CategoryType *)createCategoryType;
+-(NSArray *)fetchAllCategoryTypes;
+-(BOOL)saveChanges;
 
 @end
