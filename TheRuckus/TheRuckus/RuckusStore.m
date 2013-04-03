@@ -16,7 +16,7 @@ static RuckusStore *defaultStore = nil;
 // Creates a singleton instance of RuckusStore, provides access to model and context
 + (RuckusStore *)defaultStore
 {
-    if (defaultStore) {
+    if (!defaultStore) {
         defaultStore = [[super allocWithZone:NULL] init];
         [defaultStore initDatabase];
     }

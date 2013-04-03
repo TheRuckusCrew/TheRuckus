@@ -25,6 +25,8 @@
     // Create Manifest Object
     Manifest *createStore = [[ManifestStore defaultStore] createManifest];
     [createStore setCaption:@"Here's the caption"];
+    NSLog(@"Sample store: %@", [createStore description]);
+    
     
     // Save to database
     [[ManifestStore defaultStore] saveChanges];
