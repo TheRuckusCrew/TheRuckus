@@ -18,7 +18,6 @@ static RuckusStore *defaultStore = nil;
 {
     if (!defaultStore) {
         defaultStore = [[super allocWithZone:NULL] init];
-        [defaultStore initDatabase];
     }
     return defaultStore;
 }
