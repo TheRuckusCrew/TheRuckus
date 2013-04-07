@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="categoryTypes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CategoryType" syncable="YES"/>
     </entity>
     <entity name="CategoryType" representedClassName="CategoryType" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="manifests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Manifest" syncable="YES"/>
     </entity>
@@ -22,8 +24,8 @@
         <relationship name="manifestAlbums" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ManifestAlbum" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Category" positionX="-216" positionY="-207" width="128" height="75"/>
-        <element name="CategoryType" positionX="-117" positionY="-54" width="128" height="75"/>
+        <element name="Category" positionX="-216" positionY="-207" width="128" height="88"/>
+        <element name="CategoryType" positionX="-117" positionY="-54" width="128" height="88"/>
         <element name="Manifest" positionX="117" positionY="27" width="128" height="75"/>
         <element name="ManifestAlbum" positionX="279" positionY="-81" width="128" height="75"/>
         <element name="User" positionX="403" positionY="-234" width="128" height="90"/>
