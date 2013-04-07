@@ -4,8 +4,8 @@
 //
 //  Created by Gagandeep Dulay on 2013-03-30.
 //
-//  A singleton class that manages database. Provides access to database
-//  model and context so other store can create objects.
+//  A singleton class that manages the database. Provides access to database
+//  model and context so other stores can create objects.
 
 #import "RuckusStore.h"
 
@@ -36,6 +36,7 @@ static RuckusStore *defaultStore = nil;
     }
     
     self = [super init];
+    
     return self;
 }
 
@@ -62,6 +63,9 @@ static RuckusStore *defaultStore = nil;
     NSURL* storeUrl = [NSURL fileURLWithPath:[basePath stringByAppendingPathComponent: @"RuckusDatabase.sqlite"]];
     NSLog(@"storeUrl = %@", [storeUrl description]);
     
+    // Has the database been created before?
+    databaseCreated = [[NSFileManager defaultManager] fileExistsAtPath:[storeUrl description]];
+    
     NSError *error = nil;
 
     if (![psc addPersistentStoreWithType:NSSQLiteStoreType
@@ -76,6 +80,10 @@ static RuckusStore *defaultStore = nil;
     context = [[NSManagedObjectContext alloc] init];
     [context setPersistentStoreCoordinator:psc];
     [context setUndoManager:nil];
+    
+    if (databaseCreated) {
+        [self populateDatase];
+    }
 }
 
 - (BOOL)saveChanges
@@ -86,6 +94,14 @@ static RuckusStore *defaultStore = nil;
         NSLog(@"Error saving: %@", [err localizedDescription]);
     }
     return successful;
+}
+
+/*
+ * Inital commit to the database, first time application has been launched. Load all data.
+ */
+- (void)populateDatabase
+{
+
 }
 
 @end

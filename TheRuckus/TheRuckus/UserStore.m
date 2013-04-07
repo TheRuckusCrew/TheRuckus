@@ -4,7 +4,8 @@
 //
 //  Created by Warren Smith on 2013-04-01.
 //
-//
+//  Responsible for creating User objects and passing them back to ViewControllers.
+//  Provides creation and fetch methods.
 
 #import "UserStore.h"
 
