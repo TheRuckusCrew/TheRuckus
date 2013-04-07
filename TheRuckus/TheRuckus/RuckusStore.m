@@ -82,7 +82,7 @@ static RuckusStore *defaultStore = nil;
     [context setUndoManager:nil];
     
     if (databaseCreated) {
-        [self populateDatase];
+        [self populateDatabase];
     }
 }
 
