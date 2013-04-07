@@ -61,7 +61,7 @@ static ManifestAlbumStore *defaultStore = nil;
     NSError *error;
     NSArray *result = [context executeFetchRequest:request error:&error];
     if (!result) {
-        [NSException raise:@"Fetch failed"
+        [NSException raise:@"ManifestAlbum fetch failed"
                     format:@"Reason: %@", [error localizedDescription]];
     }
     

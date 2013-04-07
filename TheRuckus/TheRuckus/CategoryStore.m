@@ -8,31 +8,64 @@
 
 #import "CategoryStore.h"
 
-@interface CategoryStore ()
-
-@end
+static CategoryStore *defaultStore = nil;
 
 @implementation CategoryStore
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+// Create a singleton instances of CategoryStore
++ (CategoryStore *)defaultStore
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (!defaultStore){
+        defaultStore = [[super allocWithZone:NULL] init];
     }
+    return defaultStore;
+}
+
+// Prevent creation of additional instances
++ (id)allocWithZone:(NSZone *)zone
+{
+    return [self defaultStore];
+}
+
+// Protect singleton status
+- (id) init
+{
+    if (defaultStore) {
+        return defaultStore;
+    }
+    
+    self = [super init];
+    
+    context = [[RuckusStore defaultStore] getContext];
+    model = [[RuckusStore defaultStore] getModel];
+    
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+-(Category *)createCategory {
+    Category *c = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:context];
+    return c;
 }
 
-- (void)didReceiveMemoryWarning
+-(NSArray *)fetchAllCategories
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *e = [[model entitiesByName] objectForKey:@"Category"];
+    [request setEntity:e];
+    
+    NSError *error;
+    NSArray *result = [context executeFetchRequest:request error:&error];
+    if (result) {
+        [NSException raise:@"Category fetch failed" format:@"Reason: %@", [error localizedDescription]];
+    }
+    
+    return [[NSMutableArray alloc] initWithArray:result];
+}
+
+-(BOOL)saveChanges
+{
+    return [[RuckusStore defaultStore] saveChanges];
 }
 
 @end
