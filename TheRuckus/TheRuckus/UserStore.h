@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RuckusStore.h"
+#import "User.h"
 
-@interface UserStore : UIViewController
+@interface UserStore : NSObject
+{
+    NSManagedObjectContext *context;
+    NSManagedObjectModel *model;
+}
++(UserStore *) defaultStore;
++(id)allocWithZone:(NSZone *)zone;
+
+-(User *)createUser;
+-(NSArray *)fetchAllUsers;
+-(BOOL)saveChanges;
 
 @end

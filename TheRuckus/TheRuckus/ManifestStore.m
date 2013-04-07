@@ -60,7 +60,7 @@ static ManifestStore *defaultStore = nil;
     NSError *error;
     NSArray *result = [context executeFetchRequest:request error:&error];
     if (!result) {
-        [NSException raise:@"Fetch failed"
+        [NSException raise:@"Manifest fetch failed"
                     format:@"Reason: %@", [error localizedDescription]];
     }
     
