@@ -60,11 +60,12 @@ static RuckusStore *defaultStore = nil;
     
     NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString* basePath = [paths objectAtIndex:0];
-    NSURL* storeUrl = [NSURL fileURLWithPath:[basePath stringByAppendingPathComponent: @"RuckusDatabase.sqlite"]];
+    NSURL* storeUrl = [NSURL fileURLWithPath:[basePath stringByAppendingPathComponent: @"RuckusDatabase2.sqlite"]];
     NSLog(@"storeUrl = %@", [storeUrl description]);
     
     // Has the database been created before?
     databaseCreated = [[NSFileManager defaultManager] fileExistsAtPath:[storeUrl description]];
+    
     
     NSError *error = nil;
 
