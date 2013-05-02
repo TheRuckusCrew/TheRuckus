@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "User.h"
-#import "ManifestAlbum.h"
-#import "Manifest.h"
-#import "CategoryType.h"
-#import "Category.h"
+#import "CategoryStore.h"
+#import "UserStore.h"
+#import "CategoryTypeStore.h"
+#import "ManifestAlbumStore.h"
+#import "ManifestStore.h"
 
 @interface RuckusStore : NSObject
 {
